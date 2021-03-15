@@ -16,21 +16,25 @@ export const SecondaryDisabled = Template.bind({});
 Primary.args = {
   mode: 'primary',
   children: '로그인',
+  buttonType: 'submit',
 }
 
 PrimaryDisabled.args = {
   mode: 'primary',
   disabled: true,
   children: '로그인',
+  buttonType: 'submit',
 }
 
 Secondary.args = {
   mode: 'secondary',
   children: '회원가입',
+  buttonType: 'submit',
 }
 
 SecondaryDisabled.args = {
   mode: 'secondary',
   children: '회원가입',
   disabled: true,
+  buttonType: 'submit',
 }
