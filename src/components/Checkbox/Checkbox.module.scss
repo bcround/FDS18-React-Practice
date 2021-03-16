@@ -1,0 +1,24 @@
+.checkbox {
+  position: relative;
+  padding-left: 30px;
+
+  input {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url('./images/checked=false.svg') no-repeat center / cover;
+  }
+}
+
+.checked {
+  &::before {
+    background: url('./images/checked=true.svg') no-repeat center / cover;
+  }
+}
