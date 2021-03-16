@@ -6,10 +6,11 @@ import { ReactComponent as Show } from './images/show.svg'
 import { iconContainer, grayBorder } from './Icons.module.scss'
 import classNames from 'classnames'
 
-const Icons = ({ iconType, title, ...restProps }) => {
+const Icons = ({ iconType, title, className, ...restProps }) => {
   const composeClasses = classNames(
     iconContainer,
     iconType === 'letter' ? grayBorder: iconType === 'lock' ? grayBorder: '',
+    className,
   )
 
   return (

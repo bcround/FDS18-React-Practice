@@ -1,0 +1,24 @@
+.userInputContainer {
+  font: {
+    family: Noto Sans;
+    style: normal;
+    weight: 500;
+    size: 16px;
+  }
+  line-height: 22px;
+  width: 296px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInput {
+  flex-grow: 1;
+  padding: 14px 0 14px 14px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.icon {
+  cursor: pointer;
+}
