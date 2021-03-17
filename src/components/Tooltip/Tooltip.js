@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { tooltipBubble, top, bottom, left, right } from './Tooltip.module.scss'
 
-const Tooltip = ({ orientation, children, ...restProps }) => {
+const Tooltip = ({ orientation, children, className, ...restProps }) => {
   const composeClasses = classNames(
     tooltipBubble,
     (() => {
@@ -18,7 +18,8 @@ const Tooltip = ({ orientation, children, ...restProps }) => {
         default:
           return 'Error'
       }
-    })()
+    })(),
+    className,
   )
 
   return (
@@ -30,6 +31,7 @@ const Tooltip = ({ orientation, children, ...restProps }) => {
 
 Tooltip.defaultProps ={
   children: '개인 정보 보호를 위해 본인 기기에서만 이용해주세요',
+  orientation: 'top',
 }
 
 Tooltip.propTypes = {

@@ -25,7 +25,7 @@ export default class Checkbox extends Component {
 
     return (
       <label className={composeClasses}>
-        <input type="checkbox" onChange={this.check}/>
+        <input type="checkbox" onChange={this.check} />
         {this.props.children}
       </label>
     )
