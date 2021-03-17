@@ -33,7 +33,7 @@ $light-gray: #d4e0ed;
 .secondary {
   background-color: $white;
   color: $blue;
-
+  margin: 0;
   &[disabled] {
     background-color: $gray;
     color: $dark-gray;

@@ -1,0 +1,45 @@
+.signInContainer {
+  margin-top: 108px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logInManage {
+  display: flex;
+  justify-content: space-between;
+  width: 575px;
+}
+
+.loginForm {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.input {
+  width: 575px;
+  height: 63px;
+}
+
+.pwInput {
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+
+.button {
+  width: 575px;
+  height: 66px;
+  margin: 22px 0;
+}
+
+.line {
+  width: 575px;
+  border-top: 1px solid #ccc;
+}
+
+.copyright {
+  margin-top: 42px;
+}

@@ -2,10 +2,11 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { button, primary, secondary } from './Button.module.scss'
 
-const Button = ({ buttonType, mode, children, ...restProps }) => {
+const Button = ({ buttonType, mode, children, className, ...restProps }) => {
   const composeClasses = classNames(
     button,
-    mode === 'primary' ? primary : secondary
+    mode === 'primary' ? primary : secondary,
+    className,
   )
 
   return (
@@ -22,7 +23,6 @@ Button.defaultProps = {
 
 Button.propTypes = {
   mode: PropTypes.string.isRequired,
-  secondary: PropTypes.bool.isRequired,
   buttonType: PropTypes.string,
 }
 

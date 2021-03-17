@@ -3,9 +3,9 @@ import { iconInputContainer } from './IconInput.module.scss'
 import Icons from '../Icons/Icons'
 import Input from '../Input/Input'
 
-const IconInput = ({ type, state, visible, ...restProps }) => {
+const IconInput = ({ type, state, visible, className, ...restProps }) => {
   return (
-    <div className={iconInputContainer}>
+    <div className={`${iconInputContainer} ${className}`}>
       { type === 'email' ? <Icons iconType="letter" title="Letter 아이콘" /> : <Icons iconType="lock" title="Lock 아이콘" />}
       <Input type={type} visible={visible}/>
     </div>
